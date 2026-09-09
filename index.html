@@ -14,13 +14,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="demo.css">
+  <style>
+    .mobile-menu{display:none!important}
+    @media(max-width:850px){
+      .nav>nav{display:none!important}
+      .mobile-menu{display:block!important;position:relative;margin-right:auto}
+      .mobile-menu summary{display:block;list-style:none;cursor:pointer;border:1px solid #12364d;padding:8px 12px;font-size:14px;font-weight:800;white-space:nowrap}
+      .mobile-menu summary::-webkit-details-marker{display:none}
+      .mobile-menu>nav{display:none!important;position:absolute;top:46px;left:0;right:auto;width:230px;padding:8px;background:#f5f3ee;border:1px solid #d9d5cc;box-shadow:0 14px 30px rgba(18,54,77,.18);z-index:100}
+      .mobile-menu[open]>nav{display:grid!important;gap:0}
+      .mobile-menu>nav a{display:block;padding:11px 12px;border-bottom:1px solid #d9d5cc;font-size:14px}
+      .mobile-menu>nav a:last-child{border-bottom:0}
+    }
+    @media(max-width:520px){.nav{gap:12px}.nav-cta{display:none!important}}
+  </style>
 </head>
 <body>
   <header class="nav">
     <a class="brand" href="#top" aria-label="صفحه اصلی"><strong>مهرداد تقی‌پور</strong><small>وکیل پایه یک دادگستری</small></a>
     <nav aria-label="ناوبری اصلی">
-      <a href="#services">حوزه‌های فعالیت</a><a href="#approach">شیوه بررسی پرونده</a><a href="#about">درباره من</a>
+      <a href="#services">حوزه‌های فعالیت</a><a href="khesarat-takhir-tadieh.html">ماشین‌حساب خسارت</a><a href="#about">درباره من</a>
     </nav>
+    <details class="mobile-menu">
+      <summary aria-label="بازکردن منوی سایت"><span>☰</span> منو</summary>
+      <nav aria-label="منوی موبایل">
+        <a href="#services">حوزه‌های فعالیت</a>
+        <a href="#approach">شیوه بررسی پرونده</a>
+        <a href="khesarat-takhir-tadieh.html">ماشین‌حساب خسارت</a>
+        <a href="#about">درباره من</a>
+        <a href="#contact">تماس و نشانی دفتر</a>
+      </nav>
+    </details>
     <a class="nav-cta" href="tel:+989127186840">تماس برای مشاوره</a>
   </header>
 
@@ -66,6 +90,11 @@
       </ol>
     </section>
 
+    <section class="calculator-promo" aria-label="ماشین‌حساب خسارت تأخیر تأدیه">
+      <div><p class="eyebrow">ابزار حقوقی رایگان</p><h2>محاسبه خسارت تأخیر تأدیه چک</h2><p>مبلغ و تاریخ‌های چک را وارد کنید و برآورد اولیه خسارت را بر پایه شاخص‌های موجود مشاهده کنید.</p></div>
+      <a href="khesarat-takhir-tadieh.html">ورود به ماشین‌حساب <span>←</span></a>
+    </section>
+
     <section class="bale-channel" aria-label="کانال حقوق ملکی در بله">
       <div class="bale-copy">
         <p class="eyebrow">یادداشت‌ها و نکات کاربردی</p>
@@ -90,7 +119,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <p>برای شروع، موضوع و مدارک اصلی پرونده را آماده کنید.</p>
       <h2>رزرو وقت بررسی و مشاوره حقوقی</h2>
       <div class="actions"><a class="primary gold" href="tel:+989127186840">۰۹۱۲ ۷۱۸ ۶۸۴۰</a><a class="secondary dark" href="https://ble.ir/taghipourlawyer">پیام در بله: @taghipourlawyer</a></div>
