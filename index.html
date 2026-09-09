@@ -10,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="demo.css">
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#top" aria-label="صفحه اصلی"><span>م</span><strong>مهرداد تقی‌پور</strong></a>
+    <a class="brand" href="#top" aria-label="صفحه اصلی"><strong>مهرداد تقی‌پور</strong><small>وکیل پایه یک دادگستری</small></a>
     <nav aria-label="ناوبری اصلی">
       <a href="#services">حوزه‌های فعالیت</a><a href="#approach">شیوه بررسی پرونده</a><a href="#about">درباره من</a>
     </nav>
@@ -23,9 +24,10 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
+        <p class="hero-name">مهرداد تقی‌پور</p>
         <p class="eyebrow">وکیل پایه یک دادگستری · تهران</p>
-        <h1>پرونده حقوقی، قبل از هر اقدامی باید <em>درست فهمیده شود.</em></h1>
-        <p class="lead">بررسی بی‌طرفانه وضعیت پرونده، شناسایی ریسک‌ها و طراحی مسیر دفاع؛ با تمرکز ویژه بر دعاوی سنگین ملکی و ثبتی.</p>
+        <h1>مسئله ملکی، پیش از هر اقدام باید <em>درست فهمیده شود.</em></h1>
+        <p class="lead">بررسی بی‌طرفانه پرونده، شناسایی نقطه‌های پرریسک و طراحی مسیر دفاع؛ با تمرکز بر دعاوی ملکی، ثبتی، سرقفلی و حق کسب و پیشه.</p>
         <div class="actions">
           <a class="primary" href="tel:+989127186840">رزرو وقت مشاوره <span>←</span></a>
           <a class="secondary" href="https://ble.ir/taghipourlawyer">ارسال پیام در بله</a>
@@ -33,7 +35,7 @@
         <p class="micro">پیش از پذیرش وکالت، مدارک و موقعیت حقوقی پرونده بررسی می‌شود.</p>
       </div>
       <aside class="case-card" aria-label="رویکرد حرفه‌ای">
-        <div class="case-number">01</div>
+        <div class="case-label">رویکرد من</div>
         <h2>اول کشف واقعیت حقوقی؛ سپس انتخاب راه‌حل</h2>
         <p>هر ادعا از سه زاویه دیده می‌شود: استدلال موکل، دفاع طرف مقابل و نگاه احتمالی دادگاه.</p>
         <div class="case-rule"></div>
@@ -44,10 +46,10 @@
     <section class="services" id="services">
       <div class="section-head"><p>حوزه‌های فعالیت</p><h2>تمرکز اصلی بر حقوق ملکی و ثبتی</h2></div>
       <div class="service-grid">
-        <article><span>۱</span><h3>دعاوی ملکی</h3><p>ابطال قرارداد و سند، خلع ید، الزام به تنظیم سند، اختلافات مالکیت و تصرف.</p></article>
-        <article><span>۲</span><h3>دعاوی ثبتی</h3><p>تعارض اسناد، اصلاح و ابطال عملیات ثبتی، افراز و اختلافات املاک مشاع.</p></article>
-        <article><span>۳</span><h3>قراردادهای ساختمانی</h3><p>پیش‌فروش، مشارکت در ساخت و اختلافات میان مالک، سازنده و سرمایه‌گذار.</p></article>
-        <article><span>۴</span><h3>سایر پرونده‌های حقوقی</h3><p>پرونده‌های قراردادی، مالی و حقوقی پس از بررسی تخصص و امکان دفاع مؤثر.</p></article>
+        <article class="featured-service"><span>تمرکز ویژه</span><h3>سرقفلی و حق کسب و پیشه</h3><p>تخلیه اماکن تجاری، انتقال به غیر، تغییر شغل و اختلافات ناشی از حقوق کسبی مستأجر.</p></article>
+        <article><span>ملکی و ثبتی</span><h3>مالکیت، قرارداد و سند</h3><p>ابطال قرارداد و سند، الزام به تنظیم سند، خلع ید، تعارض اسناد، افراز و املاک مشاع.</p></article>
+        <article><span>ساخت‌وساز</span><h3>قراردادهای ساختمانی</h3><p>پیش‌فروش، مشارکت در ساخت و اختلافات میان مالک، سازنده و سرمایه‌گذار.</p></article>
+        <article class="secondary-service"><span>حوزه تخصصی دیگر</span><h3>دعاوی تعزیرات حکومتی</h3><p>پیگیری پرونده‌های تعزیراتی با اتکا به پروانه وکالت تخصصی این حوزه.</p></article>
       </div>
     </section>
 
@@ -61,13 +63,26 @@
       </ol>
     </section>
 
+    <section class="bale-channel" aria-label="کانال حقوق ملکی در بله">
+      <div class="bale-copy">
+        <p class="eyebrow">یادداشت‌ها و نکات کاربردی</p>
+        <h2>حقوق ملکی را در «بله» دنبال کنید</h2>
+        <p>مطالب کوتاه و مسئله‌محور درباره قرارداد، سند، سرقفلی و اختلافات ملکی.</p>
+      </div>
+      <a class="bale-link" href="https://ble.ir/join/5nhKu4zxhj" aria-label="ورود به کانال حقوق ملکی در بله">
+        <span class="bale-logo" aria-hidden="true">بله</span>
+        <span class="bale-link-copy"><b>ورود به کانال حقوق ملکی</b><small>در پیام‌رسان بله</small></span>
+        <span class="bale-arrow">←</span>
+      </a>
+    </section>
+
     <section class="about" id="about">
       <figure class="portrait"><img src="mehrdad-taghipour.jpg" alt="مهرداد تقی‌پور، وکیل پایه یک دادگستری" width="760" height="1280"></figure>
       <div>
         <p class="eyebrow">درباره من</p>
         <h2>مهرداد تقی‌پور</h2>
         <h3>وکیل پایه یک دادگستری</h3>
-        <p>فعالیت حرفه‌ای من بر حل مسائل حقوقی پیچیده، به‌ویژه در حوزه املاک و ثبت، متمرکز است. هدف در هر پرونده صرفاً طرح دعوا نیست؛ ابتدا باید معلوم شود حق قابل اثبات چیست، خطر اصلی کجاست و کدام اقدام بیشترین اثر را دارد.</p>
+        <p>فعالیت حرفه‌ای من بر حل مسائل حقوقی پیچیده، به‌ویژه در حوزه املاک، ثبت، سرقفلی و حق کسب و پیشه متمرکز است. هدف در هر پرونده صرفاً طرح دعوا نیست؛ ابتدا باید معلوم شود حق قابل اثبات چیست، خطر اصلی کجاست و کدام اقدام بیشترین اثر را دارد.</p>
         <p>پذیرش پرونده پس از بررسی اولیه اسناد و امکان ارائه دفاع مؤثر انجام می‌شود.</p>
       </div>
     </section>
@@ -79,6 +94,6 @@
     </section>
   </main>
 
-  <footer><span>© مهرداد تقی‌پور · وکیل پایه یک دادگستری</span><a href="https://ble.ir/melk_law">کانال حقوق ملکی در بله</a></footer>
+  <footer><span>© مهرداد تقی‌پور · وکیل پایه یک دادگستری</span><span>تهران</span></footer>
 </body>
 </html>
